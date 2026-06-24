@@ -17,19 +17,34 @@ DATA_FILE = "apuestas_mundial2026.json"
 CONTRASENA_CORRECTA = "Admin2026"
 
 # ======================================================
-# FUNCIONES
+# ======================================================
+# FUNCIONES MODIFICADAS
 # ======================================================
 def cargar_datos():
+    # 1. Intentar leer el archivo si existe
     if os.path.exists(DATA_FILE):
         with open(DATA_FILE, "r", encoding="utf-8") as f:
-            return json.load(f)
+            try:
+                datos = json.load(f)
+            except json.JSONDecodeError:
+                datos = {}
+    else:
+        datos = {}
 
-    return {
-        "_resultados_reales": {},
-        "_partidos_jugados": {},
-        "_bloqueo_pronosticos": False,
-        "_bloqueo_matriz": True
-    }
+    # 2. ASEGURARSE de que las variables de control SIEMPRE existan en el diccionario
+    if "_resultados_reales" not in datos:
+        datos["_resultados_reales"] = {}
+        
+    if "_partidos_jugados" not in datos:
+        datos["_partidos_jugados"] = {}
+        
+    if "_bloqueo_pronosticos" not in datos:
+        datos["_bloqueo_pronosticos"] = False
+        
+    if "_bloqueo_matriz" not in datos:
+        datos["_bloqueo_matriz"] = True  # Por defecto inicia bloqueada
+
+    return datos
 
 
 def guardar_datos(datos):
@@ -193,19 +208,29 @@ with tab1:
 
                 if st.button("Guardar Pronósticos"):
 
-                    datos[usuario_key] = {
-                        "nombre": nombre,
-                        "cedula": cedula,
-                        "apuestas": nuevas_apuestas,
-                        "puntos_totales": 0
-                    }
+                    # 1. EN LUGAR DE USAR SÓLO LA MEMORIA, LEEMOS EL ARCHIVO EN TIEMPO REAL
+                    datos_actualizados = cargar_datos()
 
-                    guardar_datos(datos)
+                    # 2. VERIFICAR DE NUEVO SI LA CÉDULA YA EXISTE EN EL ARCHIVO REAL
+                    if usuario_key in datos_actualizados:
+                        st.error("⚠️ Error: Esta cédula ya fue registrada mientras llenabas el formulario.")
+                    else:
+                        # 3. AGREGAMOS EL NUEVO JUGADOR AL DICCIONARIO FRESCO
+                        datos_actualizados[usuario_key] = {
+                            "nombre": nombre,
+                            "cedula": cedula,
+                            "apuestas": nuevas_apuestas,
+                            "puntos_totales": 0
+                        }
 
-                    st.success(
-                        "✅ Pronósticos registrados correctamente."
-                    )
-                    st.balloons()
+                        # 4. GUARDAMOS EL DICCIONARIO ACTUALIZADO
+                        guardar_datos(datos_actualizados)
+                        
+                        # 5. Sincronizamos la memoria de la sesión actual
+                        st.session_state.datos_polla = datos_actualizados
+
+                        st.success("✅ Pronósticos registrados correctamente.")
+                        st.balloons()
 
 # ======================================================
 # TAB 2 - ADMIN
