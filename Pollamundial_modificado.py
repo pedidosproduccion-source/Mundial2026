@@ -94,22 +94,22 @@ def obtener_codigo_equipo(texto):
 # PARTIDOS
 # ======================================================
 PARTIDOS = [
-    {"id": 1, "grupo": "D", "local": "Sudáfrica", "visitante": "Canadá", "fecha": "Viernes 12 de Junio - Los Angeles"},
-    {"id": 2, "grupo": "C", "local": "Brasil", "visitante": "2F", "fecha": "Sábado 13 de Junio - Nueva Jersey"},
-    {"id": 3, "grupo": "F", "local": "Alemania", "visitante": "3ABCDF", "fecha": "Domingo 14 de Junio - Dallas"},
-    {"id": 4, "grupo": "H", "local": "1F", "visitante": "Marruecos", "fecha": "Lunes 15 de Junio - Miami"},
-    {"id": 5, "grupo": "I", "local": "2E", "visitante": "2I", "fecha": "Martes 16 de Junio - Nueva Jersey"},
-    {"id": 6, "grupo": "K", "local": "1I", "visitante": "3CDFGH", "fecha": "Miércoles 17 de Julio - Ciudad de México"},
-    {"id": 7, "grupo": "D", "local": "México", "visitante": "3CEFHI", "fecha": "Viernes 19 de Junio - San Francisco"}, 
-    {"id": 8, "grupo": "E", "local": "1L", "visitante": "3EHIJK", "fecha": "Sábado 20 de Junio - Kansas City"},
-    {"id": 9, "grupo": "H", "local": "1G", "visitante": "3AEHIJ", "fecha": "Domingo 21 de Junio - Miami"},
-    {"id": 10, "grupo": "J", "local": "EE. UU.", "visitante": "3BEFIJ", "fecha": "Lunes 22 de Junio - Dallas"},
-    {"id": 11, "grupo": "A", "local": "1H", "visitante": "2J", "fecha": "Jueves 18 de Junio - Guadalajara"},
-    {"id": 12, "grupo": "K", "local": "2K", "visitante": "2L", "fecha": "Martes 23 de Junio - Guadalajara"},
-    {"id": 13, "grupo": "C", "local": "Suiza", "visitante": "3EFGIJ", "fecha": "Miércoles 24 de Junio - Miami"},
-    {"id": 14, "grupo": "E", "local": "2D", "visitante": "2G", "fecha": "Jueves 25 de Junio - Nueva Jersey"},
-    {"id": 15, "grupo": "H", "local": "Argentina", "visitante": "2H", "fecha": "Viernes 26 de Junio - Guadalajara"},
-    {"id": 16, "grupo": "K", "local": "1K", "visitante": "3DEIJL", "fecha": "Sábado 27 de Junio - Miami"},
+    {"id": 1, "Partido": "1", "local": "Sudáfrica", "visitante": "Canadá", "fecha": "Viernes 12 de Junio - Los Angeles"},
+    {"id": 2, "Partido": "2", "local": "Brasil", "visitante": "2F", "fecha": "Sábado 13 de Junio - Nueva Jersey"},
+    {"id": 3, "Partido": "3", "local": "Alemania", "visitante": "3ABCDF", "fecha": "Domingo 14 de Junio - Dallas"},
+    {"id": 4, "Partido": "4", "local": "1F", "visitante": "Marruecos", "fecha": "Lunes 15 de Junio - Miami"},
+    {"id": 5, "Partido": "5", "local": "2E", "visitante": "2I", "fecha": "Martes 16 de Junio - Nueva Jersey"},
+    {"id": 6, "Partido": "6", "local": "1I", "visitante": "3CDFGH", "fecha": "Miércoles 17 de Julio - Ciudad de México"},
+    {"id": 7, "Partido": "7", "local": "México", "visitante": "3CEFHI", "fecha": "Viernes 19 de Junio - San Francisco"}, 
+    {"id": 8, "Partido": "8", "local": "1L", "visitante": "3EHIJK", "fecha": "Sábado 20 de Junio - Kansas City"},
+    {"id": 9, "Partido": "9", "local": "1G", "visitante": "3AEHIJ", "fecha": "Domingo 21 de Junio - Miami"},
+    {"id": 10, "Partido": "10", "local": "EE. UU.", "visitante": "3BEFIJ", "fecha": "Lunes 22 de Junio - Dallas"},
+    {"id": 11, "Partido": "11", "local": "1H", "visitante": "2J", "fecha": "Jueves 18 de Junio - Guadalajara"},
+    {"id": 12, "Partido": "12", "local": "2K", "visitante": "2L", "fecha": "Martes 23 de Junio - Guadalajara"},
+    {"id": 13, "Partido": "13", "local": "Suiza", "visitante": "3EFGIJ", "fecha": "Miércoles 24 de Junio - Miami"},
+    {"id": 14, "Partido": "14", "local": "2D", "visitante": "2G", "fecha": "Jueves 25 de Junio - Nueva Jersey"},
+    {"id": 15, "Partido": "15", "local": "Argentina", "visitante": "2H", "fecha": "Viernes 26 de Junio - Guadalajara"},
+    {"id": 16, "Partido": "16", "local": "1K", "visitante": "3DEIJL", "fecha": "Sábado 27 de Junio - Miami"},
 ]
 
 # ======================================================
@@ -183,7 +183,7 @@ with tab1:
                     pid = str(partido["id"])
 
                     st.markdown(
-                        f"### Grupo {partido['grupo']} - "
+                        f"### Partido {partido['Partido']} - "
                         f"{partido['local']} vs {partido['visitante']}"
                     )
 
