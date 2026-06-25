@@ -94,22 +94,22 @@ def obtener_codigo_equipo(texto):
 # PARTIDOS
 # ======================================================
 PARTIDOS = [
-    {"id": 1, "grupo": "D", "local": "Estados Unidos (USA)", "visitante": "Paraguay (PAR)", "fecha": "Viernes 12 de Junio - Los Angeles"},
-    {"id": 2, "grupo": "C", "local": "Brasil (BRA)", "visitante": "Marruecos (MAR)", "fecha": "Sábado 13 de Junio - Nueva Jersey"},
-    {"id": 3, "grupo": "F", "local": "Países Bajos (NED)", "visitante": "Japón (JPN)", "fecha": "Domingo 14 de Junio - Dallas"},
-    {"id": 4, "grupo": "H", "local": "Uruguay (URU)", "visitante": "Arabia Saudí (KSA)", "fecha": "Lunes 15 de Junio - Miami"},
-    {"id": 5, "grupo": "I", "local": "Francia (FRA)", "visitante": "Senegal (SEN)", "fecha": "Martes 16 de Junio - Nueva Jersey"},
-    {"id": 6, "grupo": "K", "local": "Colombia (COL)", "visitante": "Uzbekistán (UZB)", "fecha": "Miércoles 17 de Julio - Ciudad de México"},
-    {"id": 7, "grupo": "D", "local": "Turquía (TUR)", "visitante": "Paraguay (PAR)", "fecha": "Viernes 19 de Junio - San Francisco"}, 
-    {"id": 8, "grupo": "E", "local": "Ecuador (ECU)", "visitante": "Curazao (CUW)", "fecha": "Sábado 20 de Junio - Kansas City"},
-    {"id": 9, "grupo": "H", "local": "Uruguay (URU)", "visitante": "Cabo Verde (CPV)", "fecha": "Domingo 21 de Junio - Miami"},
-    {"id": 10, "grupo": "J", "local": "Austria (AUT)", "visitante": "Argentina (ARG)", "fecha": "Lunes 22 de Junio - Dallas"},
-    {"id": 11, "grupo": "A", "local": "México (MEX)", "visitante": "República de Corea (KOR)", "fecha": "Jueves 18 de Junio - Guadalajara"},
-    {"id": 12, "grupo": "K", "local": "Colombia (COL)", "visitante": "RD Congo (COD)", "fecha": "Martes 23 de Junio - Guadalajara"},
-    {"id": 13, "grupo": "C", "local": "Brasil (BRA)", "visitante": "Escocia (SCO)", "fecha": "Miércoles 24 de Junio - Miami"},
-    {"id": 14, "grupo": "E", "local": "Alemania (GER)", "visitante": "Ecuador (ECU)", "fecha": "Jueves 25 de Junio - Nueva Jersey"},
-    {"id": 15, "grupo": "H", "local": "España (ESP)", "visitante": "Uruguay (URU)", "fecha": "Viernes 26 de Junio - Guadalajara"},
-    {"id": 16, "grupo": "K", "local": "Portugal (POR)", "visitante": "Colombia (COL)", "fecha": "Sábado 27 de Junio - Miami"},
+    {"id": 1, "grupo": "D", "local": "Sudáfrica", "visitante": "Canadá", "fecha": "Viernes 12 de Junio - Los Angeles"},
+    {"id": 2, "grupo": "C", "local": "Brasil", "visitante": "2F", "fecha": "Sábado 13 de Junio - Nueva Jersey"},
+    {"id": 3, "grupo": "F", "local": "Alemania", "visitante": "3ABCDF", "fecha": "Domingo 14 de Junio - Dallas"},
+    {"id": 4, "grupo": "H", "local": "1F", "visitante": "Marruecos", "fecha": "Lunes 15 de Junio - Miami"},
+    {"id": 5, "grupo": "I", "local": "2E", "visitante": "2I", "fecha": "Martes 16 de Junio - Nueva Jersey"},
+    {"id": 6, "grupo": "K", "local": "1I", "visitante": "3CDFGH", "fecha": "Miércoles 17 de Julio - Ciudad de México"},
+    {"id": 7, "grupo": "D", "local": "México", "visitante": "3CEFHI", "fecha": "Viernes 19 de Junio - San Francisco"}, 
+    {"id": 8, "grupo": "E", "local": "1L", "visitante": "3EHIJK", "fecha": "Sábado 20 de Junio - Kansas City"},
+    {"id": 9, "grupo": "H", "local": "1G", "visitante": "3AEHIJ", "fecha": "Domingo 21 de Junio - Miami"},
+    {"id": 10, "grupo": "J", "local": "EE. UU.", "visitante": "3BEFIJ", "fecha": "Lunes 22 de Junio - Dallas"},
+    {"id": 11, "grupo": "A", "local": "1H", "visitante": "2J", "fecha": "Jueves 18 de Junio - Guadalajara"},
+    {"id": 12, "grupo": "K", "local": "2K", "visitante": "2L", "fecha": "Martes 23 de Junio - Guadalajara"},
+    {"id": 13, "grupo": "C", "local": "Suiza", "visitante": "3EFGIJ", "fecha": "Miércoles 24 de Junio - Miami"},
+    {"id": 14, "grupo": "E", "local": "2D", "visitante": "2G", "fecha": "Jueves 25 de Junio - Nueva Jersey"},
+    {"id": 15, "grupo": "H", "local": "Argentina", "visitante": "2H", "fecha": "Viernes 26 de Junio - Guadalajara"},
+    {"id": 16, "grupo": "K", "local": "1K", "visitante": "3DEIJL", "fecha": "Sábado 27 de Junio - Miami"},
 ]
 
 # ======================================================
