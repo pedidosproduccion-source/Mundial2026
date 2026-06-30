@@ -100,7 +100,7 @@ PARTIDOS = [
     {"id": 8, "Partido": "8", "local": "Inglaterra", "visitante": "Congo", "fecha": "Sábado 20 de Junio - Kansas City"},
     {"id": 9, "Partido": "9", "local": "Belgica", "visitante": "Senegal", "fecha": "Domingo 21 de Junio - Miami"},
     {"id": 10, "Partido": "10", "local": "EE. UU.", "visitante": "Bosnia", "fecha": "Lunes 22 de Junio - Dallas"},
-    {"id": 11, "Partido": "11", "local": "Espña", "visitante": "Austria", "fecha": "Jueves 18 de Junio - Guadalajara"},
+    {"id": 11, "Partido": "11", "local": "España", "visitante": "Austria", "fecha": "Jueves 18 de Junio - Guadalajara"},
     {"id": 12, "Partido": "12", "local": "Portugal", "visitante": "Croacia", "fecha": "Martes 23 de Junio - Guadalajara"},
     {"id": 13, "Partido": "13", "local": "Suiza", "visitante": "Argelia", "fecha": "Miércoles 24 de Junio - Miami"},
     {"id": 14, "Partido": "14", "local": "Australia", "visitante": "Egipto", "fecha": "Jueves 25 de Junio - Nueva Jersey"},
@@ -139,7 +139,9 @@ with st.sidebar:
      Premiacion final: 1er puesto: 80% del total recaudado,
      2do puesto: 20%
      
-     Se cierran apuestas el viernes 12 de junio a las 03:00 pm
+     Solo se tiene encuanta los resusltados de los 90 minutos mas la reposicion de tiempo, no se tiene en cuenta los goles de tiempo extra ni penales.
+     
+     Se cierran apuestas el Martes 30 de junio a las 11:00 am
     """)
 
 # ======================================================
