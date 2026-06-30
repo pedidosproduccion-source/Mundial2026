@@ -139,9 +139,9 @@ with st.sidebar:
      Premiacion final: 1er puesto: 80% del total recaudado,
      2do puesto: 20%
      
-     Solo se tiene encuanta los resusltados de los 90 minutos mas la reposicion de tiempo, no se tiene en cuenta los goles de tiempo extra ni penales.
+     Solo se tiene en cuenta los resultados de los 90 minutos mas la reposicion de tiempo, no se tiene en cuenta los goles de tiempo extra ni penales.
      
-     Se cierran apuestas el Martes 30 de junio a las 11:00 am
+     Se cierran apuestas el Martes 30 de junio a las 11:30 am
     """)
 
 # ======================================================
