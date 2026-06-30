@@ -94,10 +94,6 @@ def obtener_codigo_equipo(texto):
 # PARTIDOS
 # ======================================================
 PARTIDOS = [
-    {"id": 1, "Partido": "1", "local": "Sudáfrica", "visitante": "Canadá", "fecha": "Viernes 12 de Junio - Los Angeles"},
-    {"id": 2, "Partido": "2", "local": "Brasil", "visitante": "Japon", "fecha": "Sábado 13 de Junio - Nueva Jersey"},
-    {"id": 3, "Partido": "3", "local": "Alemania", "visitante": "Paraguay", "fecha": "Domingo 14 de Junio - Dallas"},
-    {"id": 4, "Partido": "4", "local": "Paises Bajos", "visitante": "Marruecos", "fecha": "Lunes 15 de Junio - Miami"},
     {"id": 5, "Partido": "5", "local": "Costa de Marfil", "visitante": "Noruega", "fecha": "Martes 16 de Junio - Nueva Jersey"},
     {"id": 6, "Partido": "6", "local": "Francia", "visitante": "Suecia", "fecha": "Miércoles 17 de Julio - Ciudad de México"},
     {"id": 7, "Partido": "7", "local": "México", "visitante": "Ecuador", "fecha": "Viernes 19 de Junio - San Francisco"}, 
